@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  
+todos possuem
+fill - preenchimento
+stroke - borda
+strokeWidth - largura da borda
+-->
+<div>
+	<svg width="300" height="300" style="border: 1px solid">
+	<defs>
+	<linearGradient id="lg" x1=0 x2=0 y1=0 y2=1>
+	<stop offset="0%" stop-color="#FfC1A7"/>
+	<stop offset="100%" stop-color="#FFF000"/>
+	</linearGradient>
+	
+	</defs>
+	
+		<circle cx=150 cy=50 r=50 fill="url(#lg)"></circle> 
+ 	</svg>
+ 	
+ 		<svg width="300" height="300" style="border: 1px solid">
+	<defs>
+	<radialGradient id="rg" cx="50%" r="50%" cy="50%" fx="50%" fy="50%">
+	<stop offset="0%" stop-color="#FfC1A7"/>
+	<stop offset="95%" stop-color="#FFF000"/>
+	</radialGradient>
+	
+	</defs>
+	
+		<circle cx=150 cy=50 r=50 fill="url(#rg)"></circle> 
+ 	</svg>
+</div>
+
+
+</body>
+</html>
